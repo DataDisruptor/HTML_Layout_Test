@@ -21,12 +21,11 @@ h2
 #navigator
 {
     background-color: rgb(31, 49, 89);
-    border-color: rgb(7, 64, 189);
     font-size: 1.5em;
     border-radius: 25px;
     offset-position: 25px;
     position: fixed;
-    display: flexbox;
+    /* display: flexbox; */
     /* z-index: 10;  */
     /* position: absolute;  */
     right: 0; 
@@ -46,6 +45,16 @@ h2
     float: right;
 }
 
+#sidebar
+{
+    background-color: rgb(212, 188, 51);
+    float: right;
+    text-align: right;
+    position: fixed;
+    right: 0;
+    border-radius: 25px;
+}
+
 .nav-images
 {
     height: 2em;
@@ -59,8 +68,26 @@ h2
     display: flex;
     flex-wrap: wrap;
     float: left;
-    background-color: aqua;
     padding: 1%;
     margin: 1%;
     border-radius: 25px;
+    border: 5px solid;
+    border-color: rgb(31, 49, 89);;
+    border-width: 5px;
+    text-align: center;
+}
+
+.tut-images
+{
+    width: 512px;
+    height: 384px;
+}
+
+.side-obj
+{
+    margin: 1em;
+    padding: 1em;
+    border: solid gray 3px;
+    text-align: left;
+    border-radius: 12px;
 }
