@@ -8,6 +8,35 @@ h2
     font-size: 70pt;
 }
 
+#main-title
+{
+    padding: 2em;
+}
+
+#aligner
+{
+    text-align: center;
+}
+
+#navigator
+{
+    background-color: rgb(31, 49, 89);
+    border-color: rgb(7, 64, 189);
+    font-size: 1.5em;
+    border-radius: 25px;
+    offset-position: 25px;
+    position: fixed;
+    display: flexbox;
+    /* z-index: 10;  */
+    /* position: absolute;  */
+    right: 0; 
+    left: 0;
+    top: 0;
+    margin: 0;
+    
+    /* height: 83px; */
+}
+
 #login-img
 {
     height: 2em;
@@ -25,16 +54,13 @@ h2
     padding: 0.5em;
 }
 
-#aligner
+.info
 {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    background-color: aqua;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 25px;
 }
-
-#navigator
-{
-    background-color: rgb(31, 49, 89);
-    border-color: rgb(7, 64, 189);
-    font-size: 2em;
-    
-}
-/* rgb(13, 83, 234); */
