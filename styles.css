@@ -5,7 +5,7 @@ h1
 
 h2
 {
-    font-size: 70pt;
+    font-size: 30pt;
 }
 
 #main-title
@@ -90,4 +90,13 @@ h2
     border: solid gray 3px;
     text-align: left;
     border-radius: 12px;
+    size: 10px;
+}
+
+.social
+{
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    /* float: left; */
 }
