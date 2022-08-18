@@ -1,4 +1,40 @@
-.testClass
+h1
+{
+    font-size: 70pt;
+}
+
+h2
+{
+    font-size: 70pt;
+}
+
+#login-img
+{
+    height: 2em;
+    width: 4em;
+    margin: 0.5em;
+    padding: 0.5em;
+    float: right;
+}
+
+.nav-images
+{
+    height: 2em;
+    width: 4em;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+#aligner
 {
     text-align: center;
 }
+
+#navigator
+{
+    background-color: rgb(31, 49, 89);
+    border-color: rgb(7, 64, 189);
+    font-size: 2em;
+    
+}
+/* rgb(13, 83, 234); */
