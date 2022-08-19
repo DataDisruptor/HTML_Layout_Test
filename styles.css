@@ -8,6 +8,12 @@ h2
     font-size: 30pt;
 }
 
+#body-master
+{
+    background-image: url("./images/ChamferPiano_Render_029.jpg");
+    background-color: #cccccc;
+}
+
 #main-title
 {
     padding: 2em;
@@ -47,12 +53,14 @@ h2
 
 #sidebar
 {
-    background-color: rgb(212, 188, 51);
+    background-color: rgba(212, 188, 51, 0.75);
     float: right;
     text-align: right;
     position: fixed;
     right: 0;
     border-radius: 25px;
+    resize: vertical;
+    overflow: auto;
 }
 
 .nav-images
@@ -72,7 +80,7 @@ h2
     margin: 1%;
     border-radius: 25px;
     border: 5px solid;
-    border-color: rgb(31, 49, 89);;
+    border-color: rgb(41, 233, 236);;
     border-width: 5px;
     text-align: center;
 }
@@ -97,6 +105,15 @@ h2
 {
     margin: 1em;
     padding: 1em;
+    text-align: center;
+    
+    /* float: left; */
+}
+.social2
+{
+    margin: 2em;
+    padding: 1em;
     text-align: left;
+    
     /* float: left; */
 }
