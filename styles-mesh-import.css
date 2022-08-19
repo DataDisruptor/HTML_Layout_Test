@@ -1,0 +1,61 @@
+h1
+{
+    font-size: 70pt;
+}
+
+h2
+{
+    font-size: 30pt;
+}
+
+#body-master
+{
+    background-image: url("./images/ChamferPiano_Render_029.jpg");
+    background-color: #cccccc;
+}
+
+#main-title
+{
+    padding: 2em;
+}
+
+#aligner
+{
+    text-align: center;
+}
+
+#navigator
+{
+    background-color: rgb(31, 49, 89);
+    font-size: 1.5em;
+    border-radius: 25px;
+    offset-position: 25px;
+    position: fixed;
+    /* display: flexbox; */
+    /* z-index: 10;  */
+    /* position: absolute;  */
+    right: 0; 
+    left: 0;
+    top: 0;
+    margin: 0;
+    
+    /* height: 83px; */
+}
+
+#login-img
+{
+    height: 2em;
+    width: 4em;
+    margin: 0.5em;
+    padding: 0.5em;
+    float: right;
+}
+
+.nav-images
+{
+    height: 2em;
+    width: 4em;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
