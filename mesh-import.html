@@ -14,17 +14,96 @@
                 <a href="https://www.google.com"><img id="login-img" src="./images/Login.png" alt="About us"></a>
             </p>
         </header>
-        <article>
-            <section>
-                <p>
+        <article >
+            <section id="main-art">
+                <p id="main-title">
                     <h2>Importing 3D Static Meshes to engine with optimal UV Texel Density</h2>
                 </p>
-                <p>
+                <p><h3>
                     Ever wondered why does your 3d scene is lacking consistency? <br>
                     Why does some static meshes you import from a DCC look sharp and crisp, while others are just dull and lacking in detail? <br>
                     If you answered yes to both of these - then 99.9999% the culprit is Texel Density!
-                </p>
+                </h3></p>
+                <p><h4>
+                    First, let's consider the fact, that while your screen uses pixels to display rgba data, a 3d object wrapped with an image must have some way of measuring the spread of pixels within a polygon. <br>
+                    It is this equivalent of a pixel we are thinking about here, which when measured and compared against, can equate to the pixels on our screen. <br>
+                    To be more precise, we need a way to keep track of how much pixels a texture renders by the engine - ON EVERY POLYGON - in a precise manner, that does not leaves any room for ambiguity. <br>
+                    By utilizing Texel Density application to our 3d meshes in our DCC, we earn the capability of being in control over how much detail each mesh is portrayed through. <br>
+                    With this new found degree of control, the precision in which we wrap the UV layout of our meshes will guarantee their coherence when all are rendered together in a 3d scene. <br>
+                </h4></p>
+                <p><h3>
+                    But how does Texel Density work?
+                </h3></p>
+                <p><h4>
+                    Texels are measured in real-world units: this means, that even though a pixel is equal to a texel, we think of how much pixels we want to fit within 1 Meter in the scene. <br>
+                    For example, a Pixel Density of 10.24 would fit 1024 pixels within 1 meter in our scene. <br>
+                    A Pixel Density of 20.48 would fit 2048 pixels within 1 meter in our scene. <br>
+                    A Pixel Density of 40.96 would fit 4096 pixels within 1 meter in our scene. <br>
+                </h4></p>
+                <p><h4>
+                    Knowing this, we can decide how much detail objects should be given, based on our projects performance budget, as well as the placement of the objects in the 3d scene - in relation to the player's position. <br>
+                    It would not make any sense to give the underneath of a car that no one is going to see a 4K texture, nor will it make sense to give a distant mountain whose details could not be perceived from afar an 8K texture! <br>
+                    The same logic applies to texel density - if it's an object that is likely to be closer to our player viewpoint, it should be getting a higher Pixel Density standard. <br>
+                    Conversely, if it's an object that is likely to be further away from the player's viewpoint, then it should be getting a lower Pixel Density standard.
+                </h4></p>
+                    <table>
+                        <caption><h4>Texel Density to Meters</h4></caption>
+                        <thead>
+                            <tr>
+                                <th> Texel Density Value </th>
+                                <th> Calculation </th>
+                                <th> Pixels per Meter </th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td> 2.56 </th>
+                                <td> 2.56 x 100 </td>
+                                <td> 256px </td>
+                            </tr>
+                            <tr>
+                                <td> 5.12 </th>
+                                <td> 5.12 x 100 </td>
+                                <td> 512px </td>
+                            </tr>
+                            <tr>
+                                <td> 10.24 </th>
+                                <td> 10.24 x 100 </td>
+                                <td> 1,024px </td>
+                            </tr>
+                            <tr>
+                                <td> 20.48 </th>
+                                <td> 20.48 x 100 </td>
+                                <td> 2048px </td>
+                            </tr>
+                            <tr>
+                                <td> 40.96 </th>
+                                <td> 40.96 x 100 </td>
+                                <td> 4096px </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <p><h4>
+                    Basically, the UV islands of our 3d mesh can be set with a TD value that determines the amount of detail it will have (according to a pixels-per-meter ratio), which would define a precise level of detail. <br>
+                    Now, this is just a one 3d model, which is a decent amount of work in of itself.
+                    Before ever being concerned about Texel Density, our mesh should have a proper UV layout wrapped - with no overlaps, unless each island represents a diferent Material Slot. <br><br>
+                    <img src="./images/td.png" alt="UV before TD">
+                </h4></p>
             </section>
         </article>
+        <footer>
+            <p>
+                <h3>Follow me on social media && all that stuff!</h3>
+            </p>
+            <p >
+                <a href="https://www.facebook.com"><img src="./images/facebook-64.png" alt="Facebook" class="social2"></a>
+                <a href="https://www.instagram.com"><img src="./images/instagram-64.png" alt="Instagram" class="social2"></a>
+                <a href="https://www.youtube.com"><img src="./images/youtube-64.png" alt="Youtube" class="social2"></a>
+            </p>
+            <p>
+                <h3> Adam Ocheri &copy; , 2027 </h3>
+            </p>
+        </footer>
     </body>
 </html>

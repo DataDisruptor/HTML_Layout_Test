@@ -2,16 +2,32 @@ h1
 {
     font-size: 70pt;
 }
-
 h2
 {
-    font-size: 30pt;
+    font-size: 45pt;
+}
+h3
+{
+    font-size: 20pt;
+}
+
+table, td{
+    border: 1px solid #10dee98a;
+}
+th{
+    border: 1px solid #10dee98a;
+    color: aqua;
+}
+footer{
+    color: #10dee9;
 }
 
 #body-master
 {
     background-image: url("./images/ChamferPiano_Render_029.jpg");
     background-color: #cccccc;
+    color: #cccccc;
+    
 }
 
 #main-title
@@ -57,5 +73,19 @@ h2
     width: 4em;
     margin: 0.5em;
     padding: 0.5em;
+}
+
+#main-art
+{
+    padding: 2em;
+    margin: 2em;
+    border: 5px solid;
+    border-radius: 25px;
+    border-color: #cccccc;
+}
+
+#td-table
+{
+    border: 1px solid white;
 }
 
