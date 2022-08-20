@@ -4,6 +4,8 @@
     <head>
         <title>My Unreal Engine Hacks</title>
         <link rel="stylesheet" href="styles-mesh-import.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body id="body-master">
         <header>
@@ -88,7 +90,10 @@
                     Basically, the UV islands of our 3d mesh can be set with a TD value that determines the amount of detail it will have (according to a pixels-per-meter ratio), which would define a precise level of detail. <br>
                     Now, this is just a one 3d model, which is a decent amount of work in of itself.
                     Before ever being concerned about Texel Density, our mesh should have a proper UV layout wrapped - with no overlaps, unless each island represents a diferent Material Slot. <br><br>
-                    <img src="./images/td.png" alt="UV before TD">
+                    <figure>
+                        <img src="./images/td.png" alt="UV before TD">
+                        <figcaption><b>UV process breakdown, Blender3D</b></figcaption>
+                     </figure>
                 </h4></p>
             </section>
         </article>
