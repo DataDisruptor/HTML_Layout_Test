@@ -1,6 +1,6 @@
 h1
 {
-    font-size: 70pt;
+    font-size: 8vw;
     color: #cccccc;
     -webkit-text-stroke-width: 0.045em;
     -webkit-text-stroke-color: #00f2ff;
@@ -9,7 +9,7 @@ h1
 
 h2
 {
-    font-size: 30pt;
+    font-size: 5vw;
     color: #cccccc;
     -webkit-text-stroke-width: 0.015em;
     -webkit-text-stroke-color: #00f2ff;
@@ -17,6 +17,7 @@ h2
 }
 h3 , h4
 {
+    font-size: 1vw;
     color: #8688c6;
     -webkit-text-stroke-width: 0.025em;
     -webkit-text-stroke-color: #000000;

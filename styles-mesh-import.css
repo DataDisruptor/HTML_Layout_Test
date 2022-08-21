@@ -78,6 +78,8 @@ footer{
     margin: 0.5em;
     padding: 0.5em;
     float: right;
+    height: 10%;
+    width: 10%;
 }
 
 .nav-images
@@ -86,6 +88,8 @@ footer{
     width: 4em;
     margin: 0.5em;
     padding: 0.5em;
+    height: 10%;
+    width: 10%;
 }
 
 #main-art

@@ -14,9 +14,12 @@ img
     border-radius: 25px;
     cursor: pointer;
     font-stretch:ultra-expanded;
-    font-size: 12pt;
+    font-size: 1.5vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    height: 30%;
+    width: 50%;
+    
 }
 
 
@@ -36,6 +39,7 @@ img
     border-width: 5px;
     text-align: center;
     background-color: rgba(41, 233, 236, 0.15);
+    
 }
 .info2
 {
@@ -55,8 +59,8 @@ img
 
 .tut-images
 {
-    width: 512px;
-    height: 384px;
+    width: 75%; /*512px*/
+    height: 75%; /*384px*/
 }
 
 .side-obj
@@ -100,7 +104,7 @@ img
 
 .font1
 {
-    font-size: 30pt;
+    font-size: 3vw;
     color: #ffffff;
     -webkit-text-stroke-width: 0.025em;
     -webkit-text-stroke-color: #000000;
@@ -109,14 +113,14 @@ img
 }
 .font2
 {
-    font-size: 12pt;
+    font-size: 1.5vw;
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 .font3
 {
-    font-size: 16pt;
+    font-size: 2vw;
     color: #000000;
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -136,6 +140,6 @@ img
     {
         grid-auto-flow: column;
     }
-    
-    
 }
+
+
