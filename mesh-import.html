@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>My Unreal Engine Hacks</title>
-        <link rel="stylesheet" href="./css/styles-mesh-import.css">
+        <link rel="stylesheet" href="./css/global.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -19,7 +19,7 @@
         <article >
             <section id="main-art">
                 <p id="main-title">
-                    <h2 class="h2">Importing 3D Static Meshes to engine with optimal UV Texel Density<hr></h2>
+                    <h2 id="aligner">Importing 3D Static Meshes to engine with optimal UV Texel Density<hr></h2>
                 </p>
                 <p ><h3>
                     Ever wondered why does your 3d scene is lacking consistency? <br>
@@ -48,68 +48,71 @@
                     The same logic applies to texel density - if it's an object that is likely to be closer to our player viewpoint, it should be getting a higher Pixel Density standard. <br>
                     Conversely, if it's an object that is likely to be further away from the player's viewpoint, then it should be getting a lower Pixel Density standard.
                 </h4></p>
-                    <table>
-                        <caption><h4>Texel Density to Meters</h4></caption>
-                        <thead>
-                            <tr>
-                                <th> Texel Density Value </th>
-                                <th> Calculation </th>
-                                <th> Pixels per Meter </th>
-                            </tr>
-                        </thead>
-                
-                        <tbody>
-                            <tr>
-                                <td> 2.56 </th>
-                                <td> 2.56 x 100 </td>
-                                <td> 256px </td>
-                            </tr>
-                            <tr>
-                                <td> 5.12 </th>
-                                <td> 5.12 x 100 </td>
-                                <td> 512px </td>
-                            </tr>
-                            <tr>
-                                <td> 10.24 </th>
-                                <td> 10.24 x 100 </td>
-                                <td> 1,024px </td>
-                            </tr>
-                            <tr>
-                                <td> 20.48 </th>
-                                <td> 20.48 x 100 </td>
-                                <td> 2048px </td>
-                            </tr>
-                            <tr>
-                                <td> 40.96 </th>
-                                <td> 40.96 x 100 </td>
-                                <td> 4096px </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <table>
+                    <caption><h4>Texel Density to Meters</h4></caption>
+                    <thead>
+                        <tr>
+                            <th> Texel Density Value </th>
+                            <th> Calculation </th>
+                            <th> Pixels per Meter </th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <tr>
+                            <td> 2.56 </td>
+                            <td> 2.56 x 100 </td>
+                            <td> 256px </td>
+                        </tr>
+                        <tr>
+                            <td> 5.12 </td>
+                            <td> 5.12 x 100 </td>
+                            <td> 512px </td>
+                        </tr>
+                        <tr>
+                            <td> 10.24 </td>
+                            <td> 10.24 x 100 </td>
+                            <td> 1,024px </td>
+                        </tr>
+                        <tr>
+                            <td> 20.48 </td>
+                            <td> 20.48 x 100 </td>
+                            <td> 2048px </td>
+                        </tr>
+                        <tr>
+                            <td> 40.96 </td>
+                            <td> 40.96 x 100 </td>
+                            <td> 4096px </td>
+                        </tr>
+                    </tbody>
+                </table>
                 <p><h4>
                     Basically, the UV islands of our 3d mesh can be set with a TD value that determines the amount of detail it will have (according to a pixels-per-meter ratio), which would define a precise level of detail. <br>
                     Now, this is just a one 3d model, which is a decent amount of work in of itself.
                     Before ever being concerned about Texel Density, our mesh should have a proper UV layout wrapped - with no overlaps, unless each island represents a diferent Material Slot. <br><br>
                     <figure>
-                        <img src="./images/td.png" alt="UV before TD" width="50%" height="50%">
+                        <img src="./images/td.png" alt="UV before TD" width="45%" height="45%">
                         <figcaption><b class="b">UV process breakdown, Blender3D</b></figcaption>
                      </figure>
                 </h4></p>
             </section>
         </article>
         <hr>
-        <footer>
-            <p>
-                <h3>Follow me on social media && all that stuff!</h3>
-            </p>
-            <p >
-                <a href="https://www.facebook.com"><img src="./images/facebook-64.png" alt="Facebook" class="social"></a>
-                <a href="https://www.instagram.com"><img src="./images/instagram-64.png" alt="Instagram" class="social"></a>
-                <a href="https://www.youtube.com"><img src="./images/youtube-64.png" alt="Youtube" class="social"></a>
-            </p>
-            <p >
-                <h3 class="social"> Adam Ocheri &copy; , 2027 </h3>
-            </p>
+        <footer class="social3">
+            <p><hr></p>
+            <div >
+                <p>
+                    <h3>Follow me on social media && all that stuff!</h3>
+                </p>
+                <p >
+                    <a href="https://www.facebook.com"><img src="./images/facebook-64.png" alt="Facebook" class="social2"></a>
+                    <a href="https://www.instagram.com"><img src="./images/instagram-64.png" alt="Instagram" class="social2"></a>
+                    <a href="https://www.youtube.com"><img src="./images/youtube-64.png" alt="Youtube" class="social2"></a>
+                </p>
+                <p>
+                    <h3> Adam Ocheri &copy; , 2027 </h3>
+                </p>
+            </div>
         </footer>
     </body>
 </html>

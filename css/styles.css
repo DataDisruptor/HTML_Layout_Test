@@ -14,16 +14,13 @@ img
     border-radius: 25px;
     cursor: pointer;
     font-stretch:ultra-expanded;
-    font-size: 1.5vw;
+    font-size: 10pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    height: 30%;
-    width: 50%;
+    height: 100px;
+    width: 250px;
     
 }
-
-
-
 
 .info
 {
@@ -31,8 +28,8 @@ img
     flex-wrap: wrap;
     flex-direction: row;
     float: left;
-    padding: 1%;
-    margin: 1%;
+    padding: 1vw;
+    margin: 1vw;
     border-radius: 25px;
     border: 5px solid;
     border-color: rgb(41, 233, 236);;
@@ -44,8 +41,8 @@ img
 .info2
 {
     float: left;
-    padding: 1%;
-    margin: 1%;
+    padding: 5vw;
+    margin: 5vw;
     border-radius: 25px;
     border: 5px solid;
     border-color: rgb(41, 233, 236);;
@@ -59,20 +56,13 @@ img
 
 .tut-images
 {
-    width: 75%; /*512px*/
-    height: 75%; /*384px*/
+    width: 250px; /*512px*/
+    height: 200px; /*384px*/
+    padding: 1vw;
+    margin: 1vw;
 }
 
-.side-obj
-{
-    margin: 1em;
-    padding: 1em;
-    border: solid rgb(25, 23, 12) 3px;
-    text-align: left;
-    border-radius: 12px;
-    size: 10px;
-    background-color: rgba(212, 56, 51, 0.75);
-}
+
 
 .social
 {
@@ -104,7 +94,7 @@ img
 
 .font1
 {
-    font-size: 3vw;
+    font-size: 24pt;
     color: #ffffff;
     -webkit-text-stroke-width: 0.025em;
     -webkit-text-stroke-color: #000000;
@@ -113,14 +103,14 @@ img
 }
 .font2
 {
-    font-size: 1.5vw;
+    font-size: 12pt;
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 .font3
 {
-    font-size: 2vw;
+    font-size: 18pt;
     color: #000000;
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -142,4 +132,29 @@ img
     }
 }
 
+#main-art
+{
+    padding: 2em;
+    margin: 2em;
+    border: 5px solid;
+    border-radius: 25px;
+    border-color: #cccccc;
+}
+
+#td-table
+{
+    border: 1px solid white;
+    
+}
+table, td{
+    border: 1px solid #10dee98a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 8pt;
+}
+th{
+    border: 1px solid #10dee98a;
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10pt;
+}
 

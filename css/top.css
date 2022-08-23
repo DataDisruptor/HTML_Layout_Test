@@ -18,9 +18,20 @@
 {
     text-align: center;
     background-color: #00000083;
-    margin: 15%;
-    padding: 10%;
+    margin: 3vw;
+    padding: 2vw;
     
+}
+
+.side-obj
+{
+    margin: 1em;
+    padding: 1em;
+    border: solid rgb(25, 23, 12) 3px;
+    text-align: left;
+    border-radius: 12px;
+    size: 10vw;
+    background-color: rgba(212, 56, 51, 0.75);
 }
 
 #navigator
@@ -36,14 +47,7 @@
     margin: 0;  
 }
 
-#login-img
-{
-    height: 15%; /*height: 2em;*/
-    width: 15%;/* width: 4em; */
-    margin: 0.5em;
-    padding: 0.5em;
-    float: right;
-}
+
 
 #sidebar
 {
@@ -57,16 +61,52 @@
     overflow: auto;
     scrollbar-color: rgb(8, 150, 179) rgb(183, 178, 92);
     /* overflow-y: scroll; */
-    height: 35%;
-    width: 25%;
+    height: 150px;
+    width: 250px;
+}
+
+#login-img
+{
+    height: 7vw; /*height: 2em;*/
+    width: 10vw;/* width: 4em; */
+    margin: 0.2vw;
+    padding: 0.2vw;
+    float: right;
 }
 
 .nav-images
 {
-    height: 15%;
-    width: 15%;
-    margin: 0.5em;
-    padding: 0.5em;
+    height: 7vw;
+    width: 10vw;
+    margin: 0.2vw;
+    padding: 0.2vw;
+}
+
+@media (max-width: 550px)
+{
+    .nav-images
+    {
+        height: 13vw;
+        width: 19vw;
+    }
+    #login-img
+    {
+        height: 13vw;
+        width: 19vw;
+    }
+}
+@media (max-width: 350px)
+{
+    .nav-images
+    {
+        height: 15vw;
+        width: 20vw;
+    }
+    #login-img
+    {
+        height: 15vw;
+        width: 20vw;
+    }
 }
 
 /* @media (min-width: 120em)
